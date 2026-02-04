@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0f0f0f;
+  --color-surface: #1a1a1a;
+  --color-primary: #ffffff;
+  --color-secondary: #a0a0a0;
+  
+  --color-accent: #ff00ff;
+  --color-accent-hover: #e600e6;
+  
+  --color-border: #2a2a2a;
+
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  --font-display: "Special Gothic Expanded One", "Geist", sans-serif;
+}
+
+/* Custom scrollbar for webkit - keep this custom CSS */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border); 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent); 
+}
+
+.pokemon-art {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
